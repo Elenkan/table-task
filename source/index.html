@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <title>Data Table</title>
+</head>
+
+<body>
+  <main class="page-content">
+    <h2 class="page-content__title">Сведения о динамике стоимости ценных бумаг</h2>
+    <section class="page-table">
+      <button class="page-table__button" type="button">Добавить данные</button>
+      <table class="table">
+        <thead>
+          <tr class="table__titles">
+            <th>Дата</th>
+            <th>Инструмент (ценная бумага)</th>
+            <th>Стоимость</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table__information">
+            <td class="table__date">
+              <input type="text" name="" value="01/01/2019" />
+            </td>
+            <td class="table__company">
+              <input type="text" name="" value="Газпром">
+            </td>
+            <td class="table__price">
+              <input type="text" name="" value="2500">
+            </td>
+          </tr>
+                    <tr class="table__information">
+            <td class="table__date">
+              <input type="text" name="" value="01/01/2019" />
+            </td>
+            <td class="table__company">
+              <input type="text" name="" value="Газпром">
+            </td>
+            <td class="table__price">
+              <input type="text" name="" value="2500">
+            </td>
+          </tr>
+                    <tr class="table__information">
+            <td class="table__date">
+              <input type="text" name="" value="01/01/2019" />
+            </td>
+            <td class="table__company">
+              <input type="text" name="" value="Газпром">
+            </td>
+            <td class="table__price">
+              <input type="text" name="" value="2500">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      График
+    </section>
+    <div class="modal">
+      <form class="modal-form">
+        <label>
+          <span>Дата:</span>
+          <input class="modal-form__input" type="text" name="" placeholder="Заполните дату"/>
+        </label>
+        <label>
+          <span>Инструмент (ценная бумага):</span>
+          <input class="modal-form__input" type="text" name="" placeholder="Укажите название ценной бумаги"/>
+        </label>
+        <label>
+          <span>Стоимость:</span>
+          <input class="modal-form__input" type="text" name="" placeholder="Укажите стоимость"/>
+        </label>
+        <button class="modal-form__button">Добавить</button>
+      </form>
+    </div>
+  </main>
+
+</body>
+
+</html>
