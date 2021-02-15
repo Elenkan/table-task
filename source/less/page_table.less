@@ -1,49 +1,70 @@
 .page-table {
-  padding: 0 calc(50% - 450px);
   display: flex;
   flex-direction: column;
+  padding: 0 calc(50% - 450px);
 
   &__button {
-    margin-left: auto;
+    align-self: flex-end;
     margin-bottom: 20px;
-    border: 1px solid black;
-    background-color: grey;
-    border-radius: 4px;
     padding: 10px;
-  }
 
+    color: #ffffff;
+
+    background-color: #344163;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #304884;
+
+      transition: all 0.3s ease;
+    }
+  }
 }
+
 .table {
-  border-collapse: collapse;
   margin-bottom: 30px;
 
-  &__titles {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    border-top: 1px solid grey;
-     th {
-       padding: 15px;
-     }
+  border-collapse: collapse;
+  color: #ffffff;
+
+  border: 1px solid #e8e9eb;
+
+  td {
+    border: 1px solid #e8e9eb;
   }
-  &__information {
-    display: flex;
-    justify-content: space-between;
-    &:nth-child(odd),
-    &:nth-child(odd) input {
-      background-color: grey;
+
+  &__titles {
+    text-align: left;
+
+    background-color: #736a92;
+    th {
+      padding: 15px;
+
+      border: 1px solid #e8e9eb;
     }
   }
 
   input {
-    border: none;
     padding: 15px;
+
+    color: #ffffff;
+
+    background-color: #8c7bc2;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
   }
-  &__date {
-  }
-  &__company {
-  }
-  &__price {
+
+  &__information {
+    background-color: #8c7bc2;
+
+    &:hover,
+    &:hover input {
+      background-color: #a395ce;
+
+      transition: all 0.3s ease;
+    }
   }
 }
-

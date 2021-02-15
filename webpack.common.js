@@ -28,20 +28,6 @@ module.exports = {
           presets: ['@babel/preset-env']
           }
         }
-      },
-      {
-        test: /\.(png|jpe?g|svg)$/i,
-        loader: 'file-loader',
-        options: {
-           name: 'img/[name].[ext]'
-        }
-      },
-      {
-        test: /\.(woff|woff2)$/i,
-        loader: 'file-loader',
-        options: {
-           name: 'fonts/[name].[ext]'
-        }
       }
     ]
   },
